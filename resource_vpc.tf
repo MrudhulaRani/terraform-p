@@ -74,8 +74,8 @@ resource "aws_instance" "vm-tf" {
   security_groups = ["${aws_security_group.sg-tf.id}"]
   user_data = <<-EOF
   #!/bin/bash
-  yum install httpd -y
-  service httpd start
+  yum install nginx -y
+  service nginx start
   EOF
 tags {
   Name="vm-${var.project}"
