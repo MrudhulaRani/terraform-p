@@ -1,3 +1,5 @@
+
+
 output "vpc_cidr" {
   value = "${aws_vpc.vpc_tf.cidr_block}"
 }

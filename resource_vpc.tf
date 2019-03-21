@@ -23,6 +23,7 @@ resource "aws_route_table" "rt-tf" {
   }
 }
 
+
 resource "aws_subnet" "sn-tf" {
   cidr_block = "${var.sn_cidr}"
   vpc_id = "${aws_vpc.vpc_tf.id}"
