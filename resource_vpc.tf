@@ -74,7 +74,7 @@ resource "aws_instance" "vm-tf" {
   user_data = <<-EOF
   #!/bin/bash
   yum install httpd -y
-  service htttpd start
+  service httpd start
   EOF
 tags {
   Name="vm-${var.project}"
